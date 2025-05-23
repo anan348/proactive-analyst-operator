@@ -2,7 +2,7 @@ from typing import Any
 
 from agents import Agent, OpenAIChatCompletionsModel, RunContextWrapper
 
-from src.ai_agents.agent_context import AgentContext
+from ai_agents.context import AgentContext
 from src.core.prompt_manager import get_prompt
 
 class TriageAgent(Agent[AgentContext]):

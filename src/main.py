@@ -21,8 +21,8 @@ prompt_manager.initialize(prompt_dir)
 
 ## Agentのインスタンス化/レジストリに登録
 import src.ai_agents
-from src.ai_agents.agent_registry import agent_registry
-from src.ai_agents.agent_context import AgentContext
+from ai_agents.registry import agent_registry
+from ai_agents.context import AgentContext
 
 
 async def main() -> None:

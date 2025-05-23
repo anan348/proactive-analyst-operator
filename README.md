@@ -25,7 +25,7 @@ pip install -r requirements.txt
 # .env ファイルを作成して以下の変数を設定
 AZURE_OPENAI_ENDPOINT=your_azure_openai_endpoint
 AZURE_OPENAI_API_KEY=your_azure_openai_api_key
-AZURE_OPENAI_API_VERSION=2023-05-15
+AZURE_OPENAI_API_VERSION=azure_openai_api_version
 ```
 
 4. システムを起動し、クエリを入力することで分析を開始できます

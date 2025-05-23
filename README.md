@@ -29,7 +29,8 @@ AZURE_OPENAI_API_VERSION=azure_openai_api_version
 ```
 
 4. システムを起動し、クエリを入力することで分析を開始できます
-   Windows の場合:
+
+Windows の場合:
 
 ```
 $env:PYTHONPATH="."; python .\src\main.py

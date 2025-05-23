@@ -1,0 +1,11 @@
+from src.ai_agents.triage.triage_agent import TriageAgent
+from src.ai_agents.agent_registry import agent_registry
+from src.core.model_factory import ModelFactory
+from src.core.logger import apllog
+
+# エージェントのインスタンスを作成
+triage_agent = TriageAgent(ModelFactory.get_default_model())
+
+# エージェントをレジストリに登録
+agent_registry.register_agent(triage_agent)
+apllog().info(f"エージェント {triage_agent.name} をレジストリに登録しました。")

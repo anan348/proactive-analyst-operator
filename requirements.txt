@@ -1,0 +1,6 @@
+openai-agents==0.0.12
+dataclass_csv
+python-dotenv
+pydantic
+jinja2
+pyyaml

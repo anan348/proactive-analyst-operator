@@ -1,0 +1,8 @@
+triage_agent:
+  _extends: triage
+
+  transfer: |
+    - code_generate_agent
+
+  functions: |
+    - analyze_user_query

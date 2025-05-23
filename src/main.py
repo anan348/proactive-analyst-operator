@@ -5,15 +5,21 @@ from agents import Runner
 from agents import set_tracing_disabled
 
 from src.core.prompt_manager import prompt_manager
-from src.core.logger import apllog
+from src.core.logger import apllog, init_apl_logger
 
 # 初期化
+## traceを無効化
 set_tracing_disabled(True)
+
+## ロガーの初期化
+init_apl_logger('./logs/apl.log')
+
+## プロンプトマネージャーの初期化
 root_dir = Path(__file__).parent.parent
 prompt_dir = root_dir / "config" / "prompt"
 prompt_manager.initialize(prompt_dir)
 
-# Agentのインスタンス化/レジストリに登録
+## Agentのインスタンス化/レジストリに登録
 import src.ai_agents
 from src.ai_agents.agent_registry import agent_registry
 from src.ai_agents.agent_context import AgentContext

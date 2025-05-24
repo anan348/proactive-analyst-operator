@@ -2,6 +2,7 @@
 class AgentIdentityManager:
 
     class Triage:
+        task_name   : str = 'triage'
         triage_agent: str = 'triage_agent'
 
 
@@ -12,7 +13,7 @@ class AgentIdentityManager:
         """
 
         task_map = {
-            'triage': [
+            cls.Triage.task_name: [
                 cls.Triage.triage_agent,
             ],
         }

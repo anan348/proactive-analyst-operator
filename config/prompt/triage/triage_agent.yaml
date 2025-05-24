@@ -3,6 +3,7 @@ triage_agent:
 
   transfer: |
     - code_generate_agent
+    - arxiv_search_agent
 
   functions: |
     - analyze_user_query
